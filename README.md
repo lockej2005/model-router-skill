@@ -53,7 +53,7 @@ The line chart uses message counts on the horizontal axis and Astra-equivalent m
 
 ![Layered model-weighted message and plan benchmark chart](assets/model-weighted-usage.svg)
 
-Under this token assumption, an exchange costs approximately 0.235 standard credits on Astra, 0.047 on Sol and 0.00235 on Luna. The Astra-only line reaches 100 Astra-equivalent units at 100 messages. The single routed line follows one sequence across the chart: 20 Luna messages, 60 Sol messages, 15 Astra messages and 5 Luna messages. Its slope is shallow for Luna, moderate for Sol and steep for Astra, then shallow again for Luna. It is one illustrative route pattern, not a measured usage week.
+Under this token assumption, an exchange costs approximately 0.235 standard credits on Astra, 0.047 on Sol and 0.00235 on Luna. The Astra-only line reaches 100 Astra-equivalent units at 100 messages. The single routed line follows one sequence across the full 500-message chart: 100 Luna messages, 300 Sol messages, 75 Astra messages and 25 Luna messages. Its slope is shallow for Luna, moderate for Sol and steep for Astra, then shallow again for Luna. It is one illustrative route pattern, not a measured usage week.
 
 The chart treats the A$300 benchmark as 100 Astra-equivalent message units and assumes A$150 provides half that allowance. OpenAI does not publish Codex allowance limits for those Australian plan prices or a conversion from subscription usage to standard credits. The lines therefore compare model-rate scenarios against assumed plan benchmarks; they do not predict your real plan’s exhaustion point. Context, tools, reasoning tokens, images and retries increase real usage.
 

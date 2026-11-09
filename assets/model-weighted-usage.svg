@@ -34,19 +34,19 @@
 <text x="785" y="123.0" class="small" fill="#6554c0">A$300 benchmark*</text>
 <line x1="120.0" y1="430.0" x2="282.0" y2="130.0" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
 <text x="291.0" y="150.0" class="small" fill="#d04437">Astra baseline reaches guide at 100</text>
-<line x1="120.0" y1="430.0" x2="152.4" y2="429.4" stroke="#22a06b" stroke-width="6" stroke-linecap="round"/>
-<circle cx="152.4" cy="429.4" r="4" fill="#22a06b"/>
-<text x="116.19999999999999" y="417.7" class="small" fill="#22a06b">Luna</text>
-<line x1="152.4" y1="429.4" x2="249.6" y2="393.4" stroke="#2878d0" stroke-width="6" stroke-linecap="round"/>
-<circle cx="249.6" cy="393.4" r="4" fill="#2878d0"/>
-<text x="181.0" y="399.4" class="small" fill="#2878d0">Sol</text>
-<line x1="249.6" y1="393.4" x2="273.9" y2="348.4" stroke="#d04437" stroke-width="6" stroke-linecap="round"/>
-<circle cx="273.9" cy="348.4" r="4" fill="#d04437"/>
-<text x="241.75" y="358.9" class="small" fill="#d04437">Astra</text>
-<line x1="273.9" y1="348.4" x2="282.0" y2="348.25" stroke="#22a06b" stroke-width="6" stroke-linecap="round"/>
-<circle cx="282.0" cy="348.25" r="4" fill="#22a06b"/>
-<text x="257.95000000000005" y="336.325" class="small" fill="#22a06b">Luna</text>
-<text x="290.0" y="368.25" class="small" fill="#2878d0">One routed pattern: 100 msgs = 27.2 units</text>
+<line x1="120.0" y1="430.0" x2="282.0" y2="427.0" stroke="#22a06b" stroke-width="6" stroke-linecap="round"/>
+<circle cx="282.0" cy="427.0" r="4" fill="#22a06b"/>
+<text x="181.0" y="416.5" class="small" fill="#22a06b">Luna</text>
+<line x1="282.0" y1="427.0" x2="768.0" y2="247.0" stroke="#2878d0" stroke-width="6" stroke-linecap="round"/>
+<circle cx="768.0" cy="247.0" r="4" fill="#2878d0"/>
+<text x="505.0" y="325.0" class="small" fill="#2878d0">Sol</text>
+<line x1="768.0" y1="247.0" x2="889.5" y2="21.999999999999943" stroke="#d04437" stroke-width="6" stroke-linecap="round"/>
+<circle cx="889.5" cy="21.999999999999943" r="4" fill="#d04437"/>
+<text x="808.75" y="122.5" class="small" fill="#d04437">Astra</text>
+<line x1="889.5" y1="21.999999999999943" x2="930.0" y2="21.25" stroke="#22a06b" stroke-width="6" stroke-linecap="round"/>
+<circle cx="930.0" cy="21.25" r="4" fill="#22a06b"/>
+<text x="889.75" y="9.625" class="small" fill="#22a06b">Luna</text>
+<text x="290.0" y="41.25" class="small" fill="#2878d0">One routed sequence: 500 msgs = 136.2 units</text>
 <line x1="130" y1="510" x2="155" y2="510" stroke="#d04437" stroke-width="5"/><text x="163" y="515" class="small">Astra-only baseline</text>
 <line x1="340" y1="510" x2="365" y2="510" stroke="#2878d0" stroke-width="5"/><text x="373" y="515" class="small">Single routed sequence, colored by model</text>
 <line x1="690" y1="510" x2="715" y2="510" stroke="#6554c0" stroke-width="2" stroke-dasharray="7 5"/><text x="723" y="515" class="small">Plan benchmark*
