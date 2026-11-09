@@ -47,15 +47,15 @@ GPT-6.1 Sol at low reasoning is the default for mixed or uncategorised work. The
 
 These are starting defaults to evaluate, not measured savings guarantees or fixed account entitlements. Use the models available in the runtime, and keep tool choice, source quality and verification appropriate to the task.
 
-## Estimated messages by model
+## Estimated model-rate comparison
 
-The line chart uses message counts on the horizontal axis and Astra-equivalent message units on the vertical axis. One unit is the estimated burn of a typical Astra exchange. This makes model costs and plan benchmarks easier to compare without presenting percentages as actual subscription usage. Each exchange assumes 40 input tokens and 180 output tokens.
+The line chart uses message counts on the horizontal axis and Astra-equivalent message units on the vertical axis. One unit is the rate-weighted cost of an exchange handled by Astra. Each exchange assumes 40 input tokens and 180 output tokens.
 
 ![Layered model-weighted message and plan benchmark chart](assets/model-weighted-usage.svg)
 
-Under this token assumption, an exchange costs approximately 0.235 standard credits on Astra, 0.047 on Sol and 0.00235 on Luna. The Astra-only line reaches 100 Astra-equivalent units at 100 messages. The single routed line follows one sequence across the full 500-message chart: 100 Luna messages, 300 Sol messages, 75 Astra messages and 25 Luna messages. Its slope is shallow for Luna, moderate for Sol and steep for Astra, then shallow again for Luna. It is one illustrative route pattern, not a measured usage week.
+Using OpenAI’s published standard rates, an exchange with 40 uncached input tokens and 180 output tokens costs 0.235 credits on Astra, 0.047 on Sol and 0.00235 on Luna. The line shows one model sequence across 500 messages: 100 Luna, 300 Sol, 75 Astra and 25 Luna. Each segment appears once; its slope follows the model’s relative rate. The rates and token arithmetic are grounded in the published rate card, while the 40/180 token size and model sequence are explicit assumptions.
 
-The chart treats the A$300 benchmark as 100 Astra-equivalent message units and assumes A$150 provides half that allowance. OpenAI does not publish Codex allowance limits for those Australian plan prices or a conversion from subscription usage to standard credits. The lines therefore compare model-rate scenarios against assumed plan benchmarks; they do not predict your real plan’s exhaustion point. Context, tools, reasoning tokens, images and retries increase real usage.
+OpenAI states that credit prices do not determine included subscription usage and directs users to the account usage dashboard for current limits. The chart therefore does not show A$150 or A$300 plan thresholds or predict when a subscription will run out. Prior conversation context, tool results, reasoning, images and retries also increase real usage. [Published standard credit rates](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage-limit guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
 
 When the usage dashboard shows 10% or less remaining, the skill now routes work to Luna at low reasoning unless you explicitly choose another model. This economy rule is a best-effort instruction: it only applies when the runtime exposes a reliable remaining-usage signal and a supported way to select the model. [Standard model credit rates and usage guidance](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
 
