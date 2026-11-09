@@ -49,29 +49,15 @@ These are starting defaults to evaluate, not measured savings guarantees or fixe
 
 ## Estimated messages by model
 
-This estimate uses a short exchange: a one- or two-sentence prompt is assumed to contain 40 input tokens, and a few-paragraph reply is assumed to contain 180 output tokens. It excludes prior conversation context, tool results, images, reasoning tokens and retries, all of which can increase real usage.
+The line chart keeps the existing comparison format and adds message counts. Each exchange is assumed to contain a short one- or two-sentence prompt (40 input tokens) and a few-paragraph response (180 output tokens). It uses published standard credit rates to estimate model-weighted burn.
 
-| Model | Standard rate per 1M input / output tokens | Credits per assumed exchange | Relative exchanges per allowance |
-|---|---:|---:|---:|
-| GPT-6 Astra | 250 / 1,250 | 0.235 | 100 |
-| GPT-6.1 Sol | 50 / 250 | 0.047 | 500 |
-| GPT-6 Luna | 2.5 / 12.5 | 0.00235 | 10,000 |
+![Estimated model-weighted allowance use by message count](assets/model-weighted-usage.svg)
 
-The last column normalizes the allowance to 100 Astra exchanges. Under the published standard credit rates, the same token-sized exchanges would therefore be about 5 times as many with Sol or 100 times as many with Luna. This is a credit-rate estimate, not an observed subscription message cap. Actual subscription limits depend on model, context, task complexity and tools; the 40/180 token sizes are planning assumptions, not measured averages from your chats.
+Under these assumptions, one exchange costs about 0.235 standard credits on Astra, 0.047 on Sol and 0.00235 on Luna. A normalized budget equal to 100 Astra exchanges would therefore cover about 500 same-sized Sol exchanges or 10,000 Luna exchanges. The chart's routed curve assumes a mix of 10% Astra, 70% Sol and 20% Luna, yielding about 413 exchanges for the same normalized budget.
 
-```mermaid
-xychart-beta
-    title "Estimated exchanges for the same normalized allowance"
-    x-axis [Astra, Sol, Luna]
-    y-axis "Exchanges (Astra baseline = 100)" 0 --> 10000
-    bar [100, 500, 10000]
-```
+The A$150 and A$300 horizontal lines are illustrative thresholds, with the A$150 line assumed to be half the A$300 allowance. OpenAI does not publish those Australian tiers' Codex allowances, and subscription usage is not a direct conversion from standard credit rates. The account check on 10 November 2026 reported Pro's weekly allowance fully used, but not the message count that consumed it.
 
-For a mixed router, the exchange count depends on the share of work sent to each model. A simple 10% Astra, 70% Sol and 20% Luna mix averages about 0.0343 credits per assumed exchange, or roughly 6.9 times as many exchanges as all-Astra work at the same normalized credit budget. This is illustrative because real tasks vary in length and difficulty.
-
-The account usage check on 10 November 2026 reported the current Pro weekly allowance fully used. OpenAI does not provide a direct conversion from that subscription allowance to these credit rates, or publish limits for A$150 and A$300 tiers. The graph therefore compares model rate scenarios, not the number of messages your specific plan will permit. [Standard model credit rates and usage guidance](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
-
-Local session records from 4–9 November show 4,676 Astra steps (93.5%), 278 Sol steps (5.6%) and 46 Luna steps (0.9%), out of 5,000 recorded steps. These are model steps, not user messages or allowance units. A practical router trial should record actual dashboard usage and completed messages for comparable weeks.
+These message estimates exclude prior conversation context, tool results, reasoning tokens, images and retries. Real exchanges can consume much more, and the assumed prompt and response sizes are planning values rather than measured averages. Treat the curves as a model comparison, not a forecast of when your plan will run out. [Standard model credit rates and usage guidance](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
 
 ## How switching works
 
