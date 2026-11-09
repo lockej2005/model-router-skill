@@ -49,20 +49,22 @@ These are starting defaults to evaluate, not measured savings guarantees or fixe
 
 ## One-week usage comparison
 
-The account usage check on 10 November 2026 reported the Pro weekly Codex allowance at 100% used. Historical daily percentages and allowance limits for the A$150 and A$300 tiers are not exposed, so this chart shows the verified endpoint and the full-allowance reference line. The lower-tier thresholds remain unknown.
+This chart shows the comparison you asked for: baseline use without model routing, use with smart routing, and horizontal allowance lines for the A$150 and A$300 plan scenarios. The observed account check on 10 November 2026 confirmed that the current Pro weekly allowance was fully used. We do not have daily history or measured allowance limits for the two Australian-dollar tiers, so the curves and plan lines below are illustrative scenarios, not measured forecasts.
 
 ```mermaid
 xychart-beta
-    title "Weekly allowance use: observed Pro endpoint"
+    title "Illustrative weekly usage against plan thresholds"
     x-axis [Mon, Tue, Wed, Thu, Fri, Sat, Sun]
-    y-axis "Allowance used (%)" 0 --> 100
-    line [0, 0, 0, 0, 0, 0, 100]
+    y-axis "Share of A$300 scenario allowance (%)" 0 --> 100
+    line [8, 23, 39, 56, 75, 91, 100]
+    line [4, 12, 21, 31, 42, 53, 62]
+    line [50, 50, 50, 50, 50, 50, 50]
     line [100, 100, 100, 100, 100, 100, 100]
 ```
 
-The rising line is intentionally plotted only at the verified Sunday endpoint; earlier zeros indicate missing daily observations, not zero usage. The horizontal line marks full allowance use. No horizontal crossover lines are drawn for A$150 or A$300 because the available account data and published plan information do not give those tiers' allowance percentages. The published Codex pricing page lists Pro prices in US dollars and notes that usage varies with model, task size, context and tools. [OpenAI pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan).
+The series order is baseline without routing, smart model routing, A$150 threshold and A$300 threshold. The plan lines assume allowance scales directly with monthly price, so A$150 is drawn at half the A$300 allowance. That proportional relationship is only a plotting assumption; OpenAI does not publish these Australian-dollar tiers' Codex allowance percentages. The routed curve is also a scenario, not measured savings. Do not use this graphic alone to decide whether to downgrade.
 
-To compare plans properly, record the account's allowance percentage at regular intervals across representative weeks. Then plot each plan's actual usage series against its own 100% allowance line, keeping workload volume and task mix comparable. [Check current limits in the usage dashboard](https://chatgpt.com/codex/settings/usage).
+For a grounded forecast, record weekly usage percentages and the account's plan tier over several comparable weeks, first without routing and then with routing. Replace the illustrative curves and price-proportional thresholds with those observed values. OpenAI notes that model, task size, context, tools and caching affect usage. [Pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
 
 ## How switching works
 
