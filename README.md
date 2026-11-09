@@ -49,19 +49,20 @@ These are starting defaults to evaluate, not measured savings guarantees or fixe
 
 ## One-week usage comparison
 
-The account usage check on 10 November 2026 reported the Pro weekly Codex allowance at 100% used. It confirms the current tier reached its weekly cap, but the account endpoint does not provide daily history or allowance percentages for the A$150 and A$300 tiers.
+The account usage check on 10 November 2026 reported the Pro weekly Codex allowance at 100% used. Historical daily percentages and allowance limits for the A$150 and A$300 tiers are not exposed, so this chart shows the verified endpoint and the full-allowance reference line. The lower-tier thresholds remain unknown.
 
 ```mermaid
 xychart-beta
-    title "Verified weekly usage and plan thresholds"
-    x-axis [Pro allowance, A$150 tier, A$300 tier]
-    y-axis "Usage allowance status (%)" 0 --> 100
-    bar [100, 0, 0]
+    title "Weekly allowance use: observed Pro endpoint"
+    x-axis [Mon, Tue, Wed, Thu, Fri, Sat, Sun]
+    y-axis "Allowance used (%)" 0 --> 100
+    line [0, 0, 0, 0, 0, 0, 100]
+    line [100, 100, 100, 100, 100, 100, 100]
 ```
 
-Only the first bar is measured. The zero-height bars are placeholders for unavailable data, not evidence that either tier has unused capacity. The published Codex pricing page currently lists Pro prices in US dollars and says usage depends on model, task size, complexity, context and tools. It does not document a fixed allowance for the Australian-dollar amounts shown here. [OpenAI pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan).
+The rising line is intentionally plotted only at the verified Sunday endpoint; earlier zeros indicate missing daily observations, not zero usage. The horizontal line marks full allowance use. No horizontal crossover lines are drawn for A$150 or A$300 because the available account data and published plan information do not give those tiers' allowance percentages. The published Codex pricing page lists Pro prices in US dollars and notes that usage varies with model, task size, context and tools. [OpenAI pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan).
 
-A real downgrade comparison needs comparable weekly usage readings for each tier, or an account-provided allowance measure recorded over time. Once those readings are available, plot each week as a percentage of that tier's allowance and compare the same work mix. Do not infer a tier's capacity from its price alone. [Check current limits in the usage dashboard](https://chatgpt.com/codex/settings/usage).
+To compare plans properly, record the account's allowance percentage at regular intervals across representative weeks. Then plot each plan's actual usage series against its own 100% allowance line, keeping workload volume and task mix comparable. [Check current limits in the usage dashboard](https://chatgpt.com/codex/settings/usage).
 
 ## How switching works
 
