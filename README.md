@@ -53,7 +53,7 @@ The chart layers two cumulative weekly usage curves. Each segment is colored for
 
 ![Illustrative model-weighted weekly allowance chart](assets/model-weighted-usage.svg)
 
-This is a scenario, not a measured forecast. The curve assumes an Astra-heavy baseline and a routed mix that moves from Luna to Sol to Astra as task difficulty rises. The slope ratios use published standard credit rates as a rough proxy: for uncached input and output, Sol is about 20% of Astra's rate and Luna about 1%. Subscription allowance use is not published as a direct conversion from those rates.
+This is a scenario, not a measured forecast. The curve assumes an Astra-heavy baseline and a routed mix that moves from Luna to Sol to Astra as task difficulty rises. The chart annotates published standard credit-rate ratios: Astra costs 5 times as many credits as Sol per million uncached input or output tokens, and 100 times as many as Luna. Cached-input ratios differ: Astra is 10 times Sol and 100 times Luna. These are credit rates, not subscription allowance multipliers; subscription allowance use is not published as a direct conversion from them.
 
 The A$150 guide is placed at half the A$300 guide only to illustrate a price-proportional threshold. OpenAI does not publish the Codex allowance limits for those Australian-dollar tiers. The account usage check on 10 November 2026 confirms the current Pro weekly allowance reached 100%, but there is no daily allowance history to ground the curve. Do not use this scenario alone to decide on a downgrade.
 
