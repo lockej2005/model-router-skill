@@ -49,20 +49,19 @@ These are starting defaults to evaluate, not measured savings guarantees or fixe
 
 ## One-week usage comparison
 
-The current local session sample shows a strongly Astra-heavy baseline. The account usage endpoint reports the weekly Pro allowance fully used, but it does not expose historical daily allowance consumption or a per-task replay. That means this chart compares the observed model pattern with a routing scenario; the router series is an estimate, not an observed week or a promised savings rate.
+The account usage check on 10 November 2026 reported the Pro weekly Codex allowance at 100% used. It confirms the current tier reached its weekly cap, but the account endpoint does not provide daily history or allowance percentages for the A$150 and A$300 tiers.
 
 ```mermaid
 xychart-beta
-    title "Illustrative weekly allowance use"
-    x-axis [Mon, Tue, Wed, Thu, Fri, Sat, Sun]
-    y-axis "Relative weekly allowance used (%)" 0 --> 100
-    line [8, 22, 38, 55, 73, 88, 100]
-    line [4, 11, 19, 28, 37, 44, 50]
+    title "Verified weekly usage and plan thresholds"
+    x-axis [Pro allowance, A$150 tier, A$300 tier]
+    y-axis "Usage allowance status (%)" 0 --> 100
+    bar [100, 0, 0]
 ```
 
-The first line represents a normalised example of the observed GPT-6 Astra, medium-reasoning pattern reaching the reported weekly cap. The second line illustrates a hypothetical week routed by category across Luna, Terra and Sol, with Astra reserved for difficult work. Its values are placeholders to show how the comparison can be displayed; they are not measured from your account and must not be read as a 50% savings forecast.
+Only the first bar is measured. The zero-height bars are placeholders for unavailable data, not evidence that either tier has unused capacity. The published Codex pricing page currently lists Pro prices in US dollars and says usage depends on model, task size, complexity, context and tools. It does not document a fixed allowance for the Australian-dollar amounts shown here. [OpenAI pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan).
 
-To turn this into a real comparison, record weekly allowance consumption at comparable intervals while using the router, then plot the actual readings beside an equivalent baseline period. Keep work volume and task mix in view, since different workweeks are not directly comparable. OpenAI notes that model, context, task complexity, tools and caching affect usage. [Check the current limits and reset time in the usage dashboard](https://chatgpt.com/codex/settings/usage).
+A real downgrade comparison needs comparable weekly usage readings for each tier, or an account-provided allowance measure recorded over time. Once those readings are available, plot each week as a percentage of that tier's allowance and compare the same work mix. Do not infer a tier's capacity from its price alone. [Check current limits in the usage dashboard](https://chatgpt.com/codex/settings/usage).
 
 ## How switching works
 
