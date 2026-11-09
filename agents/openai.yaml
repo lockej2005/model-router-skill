@@ -1,0 +1,6 @@
+interface:
+  display_name: "Model Router"
+  short_description: "Route tasks to economical models with verified results"
+  default_prompt: "Use $model-router to complete this task with efficient model selection and proportionate verification."
+policy:
+  allow_implicit_invocation: true
