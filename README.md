@@ -49,13 +49,13 @@ These are starting defaults to evaluate, not measured savings guarantees or fixe
 
 ## Estimated messages by model
 
-The line chart uses message counts on the horizontal axis and estimated standard-credit burn on the vertical axis. It assumes each exchange contains 40 input tokens and 180 output tokens: roughly a short prompt and a few-paragraph reply. Lines are model-colored, and their slope changes with the model handling each segment.
+The line chart uses message counts on the horizontal axis and Astra-equivalent message units on the vertical axis. One unit is the estimated burn of a typical Astra exchange. This makes model costs and plan benchmarks easier to compare without presenting percentages as actual subscription usage. Each exchange assumes 40 input tokens and 180 output tokens.
 
 ![Layered model-weighted message and plan benchmark chart](assets/model-weighted-usage.svg)
 
-Under this token assumption, an exchange costs approximately 0.235 standard credits on Astra, 0.047 on Sol and 0.00235 on Luna. The Astra-only line reaches the normalized A$300 benchmark at 100 messages. The routed line repeats a profile of 20 Luna messages, 60 Sol messages, 15 Astra messages and 5 Luna messages, so Luna starts and ends with the shallowest slope, Sol climbs moderately, and Astra climbs steeply. This route profile is an illustration, not a measured usage week.
+Under this token assumption, an exchange costs approximately 0.235 standard credits on Astra, 0.047 on Sol and 0.00235 on Luna. The Astra-only line reaches 100 Astra-equivalent units at 100 messages. The single routed line follows one sequence across the chart: 20 Luna messages, 60 Sol messages, 15 Astra messages and 5 Luna messages. Its slope is shallow for Luna, moderate for Sol and steep for Astra, then shallow again for Luna. It is one illustrative route pattern, not a measured usage week.
 
-The chart treats the A$300 benchmark as the credit-equivalent cost of 100 Astra exchanges and assumes A$150 provides half that allowance. OpenAI does not publish Codex allowance limits for those Australian plan prices or a conversion from subscription usage to standard credits. The lines therefore compare model-rate scenarios against assumed plan benchmarks; they do not predict your real plan’s exhaustion point. Context, tools, reasoning tokens, images and retries increase real usage.
+The chart treats the A$300 benchmark as 100 Astra-equivalent message units and assumes A$150 provides half that allowance. OpenAI does not publish Codex allowance limits for those Australian plan prices or a conversion from subscription usage to standard credits. The lines therefore compare model-rate scenarios against assumed plan benchmarks; they do not predict your real plan’s exhaustion point. Context, tools, reasoning tokens, images and retries increase real usage.
 
 When the usage dashboard shows 10% or less remaining, the skill now routes work to Luna at low reasoning unless you explicitly choose another model. This economy rule is a best-effort instruction: it only applies when the runtime exposes a reliable remaining-usage signal and a supported way to select the model. [Standard model credit rates and usage guidance](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
 
