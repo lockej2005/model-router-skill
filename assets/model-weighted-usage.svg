@@ -32,9 +32,9 @@
 <text x="633.0" y="333" class="small">400</text>
 <text x="701.5" y="333" class="small">450</text>
 <text x="770.0" y="333" class="small">500</text>
-<line x1="95" y1="232.66666666666669" x2="780" y2="232.66666666666669" stroke="#6554c0" stroke-width="2" stroke-dasharray="8 6"/
+<line x1="95" y1="232.66666666666669" x2="780" y2="232.66666666666669" stroke="#6554c0" stroke-width="2" stroke-dasharray="8 6"/>
 <text x="650" y="224.66666666666669" class="small" fill="#6554c0">A$150 benchmark*</text>
-<line x1="95" y1="155.33333333333334" x2="780" y2="155.33333333333334" stroke="#6554c0" stroke-width="2" stroke-dasharray="8 6"/
+<line x1="95" y1="155.33333333333334" x2="780" y2="155.33333333333334" stroke="#6554c0" stroke-width="2" stroke-dasharray="8 6"/>
 <text x="650" y="147.33333333333334" class="small" fill="#6554c0">A$300 benchmark*</text>
 <line x1="95.0" y1="310.0" x2="300.5" y2="78.0" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
 <text x="225.15" y="153.06666666666666" class="small" fill="#d04437">Astra-only baseline</text>
