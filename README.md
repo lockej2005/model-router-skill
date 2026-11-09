@@ -99,3 +99,15 @@ It does not change subscriptions, purchase credits, consume resets or silently r
 ## License
 
 No license has been added yet. Until a license is chosen, reuse and redistribution remain subject to the repository owner's rights.
+
+## Example chat with model routing
+
+This illustrative exchange shows a routing request followed by the answer in the same chat. The notice belongs in a progress update, and the final response contains the requested work. An accepted routing request is reported as requested until execution metadata confirms the effective model.
+
+> User: Rewrite this sentence so it is clearer: “The meeting was moved due to a clash in schedules.”
+>
+> Assistant, progress update: Requested GPT-6 Luna with low reasoning for the continuation because this is a short editing task.
+>
+> Assistant, final response: The meeting was rescheduled because of a scheduling conflict.
+
+When runtime metadata confirms a model change, the progress notice can instead say, “We changed the model to GPT-6 Luna (low reasoning). Why: this is a short editing task.” The assistant then completes the original request without another routing handoff.
