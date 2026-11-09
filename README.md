@@ -49,11 +49,11 @@ These are starting defaults to evaluate, not measured savings guarantees or fixe
 
 ## Estimated messages by model
 
-The line chart keeps the existing comparison format and adds message counts. Each exchange is assumed to contain a short one- or two-sentence prompt (40 input tokens) and a few-paragraph response (180 output tokens). It uses published standard credit rates to estimate model-weighted burn.
+The layered line chart compares cumulative estimated allowance use by message count. Each exchange assumes a short one- or two-sentence prompt (40 input tokens) and a few-paragraph response (180 output tokens). It uses published standard credit rates to estimate model-weighted burn.
 
 ![Estimated model-weighted allowance use by message count](assets/model-weighted-usage.svg)
 
-Under these assumptions, one exchange costs about 0.235 standard credits on Astra, 0.047 on Sol and 0.00235 on Luna. A normalized budget equal to 100 Astra exchanges would therefore cover about 500 same-sized Sol exchanges or 10,000 Luna exchanges. The chart's routed curve assumes a mix of 10% Astra, 70% Sol and 20% Luna, yielding about 413 exchanges for the same normalized budget.
+Under these assumptions, one exchange costs about 0.235 standard credits on Astra, 0.047 on Sol and 0.00235 on Luna. The baseline curve reaches the normalized allowance at 100 Astra exchanges. The routed curve assumes a mix of 10% Astra, 70% Sol and 20% Luna, yielding about 413 same-sized exchanges for that normalized budget. Colored routed segments show Luna, Sol and Astra stages, with the slope increasing as the mix shifts toward higher-rate models.
 
 The A$150 and A$300 horizontal lines are illustrative thresholds, with the A$150 line assumed to be half the A$300 allowance. OpenAI does not publish those Australian tiers' Codex allowances, and subscription usage is not a direct conversion from standard credit rates. The account check on 10 November 2026 reported Pro's weekly allowance fully used, but not the message count that consumed it.
 
