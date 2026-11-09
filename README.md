@@ -47,17 +47,31 @@ GPT-6.1 Sol at low reasoning is the default for mixed or uncategorised work. The
 
 These are starting defaults to evaluate, not measured savings guarantees or fixed account entitlements. Use the models available in the runtime, and keep tool choice, source quality and verification appropriate to the task.
 
-## Model-weighted allowance scenario
+## Estimated messages by model
 
-The chart layers two cumulative weekly usage curves. Each segment is colored for the model assumed to handle that part of the work. Steeper segments represent a higher assumed allowance burn: Astra, then Sol, then Luna. The horizontal guides show A$150 and A$300 scenarios.
+This estimate uses a short exchange: a one- or two-sentence prompt is assumed to contain 40 input tokens, and a few-paragraph reply is assumed to contain 180 output tokens. It excludes prior conversation context, tool results, images, reasoning tokens and retries, all of which can increase real usage.
 
-![Illustrative model-weighted weekly allowance chart](assets/model-weighted-usage.svg)
+| Model | Standard rate per 1M input / output tokens | Credits per assumed exchange | Relative exchanges per allowance |
+|---|---:|---:|---:|
+| GPT-6 Astra | 250 / 1,250 | 0.235 | 100 |
+| GPT-6.1 Sol | 50 / 250 | 0.047 | 500 |
+| GPT-6 Luna | 2.5 / 12.5 | 0.00235 | 10,000 |
 
-This is a scenario, not a measured forecast. The curve assumes an Astra-heavy baseline and a routed mix that moves from Luna to Sol to Astra as task difficulty rises. The chart annotates published standard credit-rate ratios: Astra costs 5 times as many credits as Sol per million uncached input or output tokens, and 100 times as many as Luna. Cached-input ratios differ: Astra is 10 times Sol and 100 times Luna. These are credit rates, not subscription allowance multipliers; subscription allowance use is not published as a direct conversion from them. The chart callout also states the ratios, so the comparison remains visible if a Markdown renderer omits SVG annotations.
+The last column normalizes the allowance to 100 Astra exchanges. Under the published standard credit rates, the same token-sized exchanges would therefore be about 5 times as many with Sol or 100 times as many with Luna. This is a credit-rate estimate, not an observed subscription message cap. Actual subscription limits depend on model, context, task complexity and tools; the 40/180 token sizes are planning assumptions, not measured averages from your chats.
 
-The A$150 guide is placed at half the A$300 guide only to illustrate a price-proportional threshold. OpenAI does not publish the Codex allowance limits for those Australian-dollar tiers. The account usage check on 10 November 2026 confirms the current Pro weekly allowance reached 100%, but there is no daily allowance history to ground the curve. Do not use this scenario alone to decide on a downgrade.
+```mermaid
+xychart-beta
+    title "Estimated exchanges for the same normalized allowance"
+    x-axis [Astra, Sol, Luna]
+    y-axis "Exchanges (Astra baseline = 100)" 0 --> 10000
+    bar [100, 500, 10000]
+```
 
-Local session records from 4–9 November show 4,676 Astra steps (93.5%), 278 Sol steps (5.6%) and 46 Luna steps (0.9%), out of 5,000 recorded steps. These are model steps, not user messages or allowance units, and do not cover every device or account surface. Replace the scenario with dashboard readings collected at consistent times across comparable weeks. OpenAI says usage varies with model, task size, context, tools and caching. [Pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Standard model credit rates](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
+For a mixed router, the exchange count depends on the share of work sent to each model. A simple 10% Astra, 70% Sol and 20% Luna mix averages about 0.0343 credits per assumed exchange, or roughly 6.9 times as many exchanges as all-Astra work at the same normalized credit budget. This is illustrative because real tasks vary in length and difficulty.
+
+The account usage check on 10 November 2026 reported the current Pro weekly allowance fully used. OpenAI does not provide a direct conversion from that subscription allowance to these credit rates, or publish limits for A$150 and A$300 tiers. The graph therefore compares model rate scenarios, not the number of messages your specific plan will permit. [Standard model credit rates and usage guidance](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
+
+Local session records from 4–9 November show 4,676 Astra steps (93.5%), 278 Sol steps (5.6%) and 46 Luna steps (0.9%), out of 5,000 recorded steps. These are model steps, not user messages or allowance units. A practical router trial should record actual dashboard usage and completed messages for comparable weeks.
 
 ## How switching works
 
