@@ -51,7 +51,7 @@ These are starting defaults to evaluate, not measured savings guarantees or fixe
 
 The line chart uses message counts on the horizontal axis and an explicitly illustrative A$300 proxy on the vertical axis. Each exchange assumes 40 input tokens and 180 output tokens. The chart draws A$150 and A$300 reference lines; they are not actual plan limits.
 
-![Layered model-rate line chart by message count](assets/model-weighted-usage.svg)
+![Layered model-rate line chart by message count](assets/model-weighted-usage-v2.svg)
 
 Using OpenAI’s published standard rates, an exchange with 40 uncached input tokens and 180 output tokens costs 0.235 credits on Astra, 0.047 on Sol and 0.00235 on Luna. The routed line shows one model sequence across 500 messages: 100 Luna, 300 Sol, 50 Astra and 50 Luna. The Astra-only line reaches the chart’s 120% ceiling after 120 messages. The routed estimate ends at about 111.5% of the illustrative proxy, slightly above the A$300 reference. Each segment appears once; its slope follows the model’s relative rate. The rates and token arithmetic are grounded in the published rate card, while the 40/180 token size and model sequence are explicit assumptions.
 

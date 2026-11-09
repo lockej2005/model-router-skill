@@ -29,29 +29,29 @@
 <text x="701.5" y="333" class="small">450</text>
 <text x="770.0" y="333" class="small">500</text>
 <line x1="95" y1="213.33333333333331" x2="780" y2="213.33333333333331" stroke="#6554c0" stroke-width="2" stroke-dasharray="8 6"/>
-<text x="650" y="205.33333333333331" class="small" fill="#6554c0">A$150 proxy*</text>
+<text x="660" y="233" class="small" fill="#6554c0">A$150 proxy*</text>
 <line x1="95" y1="116.66666666666666" x2="780" y2="116.66666666666666" stroke="#6554c0" stroke-width="2" stroke-dasharray="8 6"/>
-<text x="650" y="108.66666666666666" class="small" fill="#6554c0">A$300 proxy*</text>
+<text x="105" y="108" class="small" fill="#6554c0">A$300 proxy*</text>
 <line x1="95.0" y1="310.0" x2="259.4" y2="78.0" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
-<text x="190" y="91" class="small" fill="#d04437">Astra-only exceeds scale after 120 messages</text>
+<text x="290" y="94" class="small" fill="#d04437">Astra-only exceeds 120% after 120 messages</text>
 <line x1="95.0" y1="310.0" x2="232.0" y2="308.06666666666666" stroke="#22a06b" stroke-width="6" stroke-linecap="round"/>
 <text x="145.5" y="299.7728333333333" class="small" fill="#22a06b">Luna</text>
 <line x1="232.0" y1="308.06666666666666" x2="643.0" y2="192.06666666666666" stroke="#2878d0" stroke-width="6" stroke-linecap="round"/>
 <text x="419.5" y="285.91566666666665" class="small" fill="#2878d0">Sol</text>
 <line x1="643.0" y1="192.06666666666666" x2="711.5" y2="95.3" stroke="#d04437" stroke-width="6" stroke-linecap="round"/>
-<text x="675" y="150" class="small" fill="#d04437">Astra</text>
+<text x="680" y="178" class="small" fill="#d04437">Astra</text>
 <line x1="711.5" y1="95.3" x2="780.0" y2="94.33333333333333" stroke="#22a06b" stroke-width="6" stroke-linecap="round"/>
 <text x="748" y="115" class="small" fill="#22a06b">Luna</text>
 <line x1="765" y1="78" x2="778" y2="91" stroke="#2878d0" stroke-width="1.5"/>
 <circle cx="780" cy="94.33333333333333" r="4" fill="#2878d0"/>
-<text x="520" y="70" class="small" fill="#2878d0">500 messages · 111.5% of A$300 proxy</text>
-<line x1="105" y1="510" x2="129" y2="510" stroke="#d04437" stroke-width="5"/>
+<text x="500" y="70" class="small" fill="#2878d0">500 messages: 111.5% of A$300 proxy</text>
+<line x1="105" y1="366" x2="129" y2="366" stroke="#d04437" stroke-width="5"/>
 <text x="137" y="370" class="small">Astra-only</text>
-<line x1="255" y1="510" x2="279" y2="510" stroke="#2878d0" stroke-width="5"/>
+<line x1="255" y1="366" x2="279" y2="366" stroke="#2878d0" stroke-width="5"/>
 <text x="287" y="370" class="small">Sol section</text>
-<line x1="390" y1="510" x2="414" y2="510" stroke="#22a06b" stroke-width="5"/>
+<line x1="390" y1="366" x2="414" y2="366" stroke="#22a06b" stroke-width="5"/>
 <text x="422" y="370" class="small">Luna section</text>
-<line x1="530" y1="510" x2="554" y2="510" stroke="#6554c0" stroke-width="5"/>
+<line x1="530" y1="366" x2="554" y2="366" stroke="#6554c0" stroke-width="5"/>
 <text x="562" y="370" class="small">Assumed plan benchmark</text>
 <text x="120" y="400" class="small">Illustrative proxy only: 100 Astra-equivalent exchanges = 100%; A$150 is shown at 50%. Not actual subscription usage.</text>
 <text x="120" y="420" class="small">Rates per assumed exchange: Astra 0.235, Sol 0.047, Luna 0.00235 standard credits.</text>
