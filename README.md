@@ -47,6 +47,23 @@ GPT-6.1 Sol at low reasoning is the default for mixed or uncategorised work. The
 
 These are starting defaults to evaluate, not measured savings guarantees or fixed account entitlements. Use the models available in the runtime, and keep tool choice, source quality and verification appropriate to the task.
 
+## One-week usage comparison
+
+The current local session sample shows a strongly Astra-heavy baseline. The account usage endpoint reports the weekly Pro allowance fully used, but it does not expose historical daily allowance consumption or a per-task replay. That means this chart compares the observed model pattern with a routing scenario; the router series is an estimate, not an observed week or a promised savings rate.
+
+```mermaid
+xychart-beta
+    title "Illustrative weekly allowance use"
+    x-axis [Mon, Tue, Wed, Thu, Fri, Sat, Sun]
+    y-axis "Relative weekly allowance used (%)" 0 --> 100
+    line [8, 22, 38, 55, 73, 88, 100]
+    line [4, 11, 19, 28, 37, 44, 50]
+```
+
+The first line represents a normalised example of the observed GPT-6 Astra, medium-reasoning pattern reaching the reported weekly cap. The second line illustrates a hypothetical week routed by category across Luna, Terra and Sol, with Astra reserved for difficult work. Its values are placeholders to show how the comparison can be displayed; they are not measured from your account and must not be read as a 50% savings forecast.
+
+To turn this into a real comparison, record weekly allowance consumption at comparable intervals while using the router, then plot the actual readings beside an equivalent baseline period. Keep work volume and task mix in view, since different workweeks are not directly comparable. OpenAI notes that model, context, task complexity, tools and caching affect usage. [Check the current limits and reset time in the usage dashboard](https://chatgpt.com/codex/settings/usage).
+
 ## How switching works
 
 A skill runs after a turn has started, so it cannot change the model that is already answering. When Codex exposes a supported model override for a later turn, the router can request a continuation in the same chat. It gives one short notice, for example:
