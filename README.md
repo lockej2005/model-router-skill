@@ -47,24 +47,33 @@ GPT-6.1 Sol at low reasoning is the default for mixed or uncategorised work. The
 
 These are starting defaults to evaluate, not measured savings guarantees or fixed account entitlements. Use the models available in the runtime, and keep tool choice, source quality and verification appropriate to the task.
 
-## One-week usage comparison
+## Observed model mix and weekly usage
 
-This chart shows the comparison you asked for: baseline use without model routing, use with smart routing, and horizontal allowance lines for the A$150 and A$300 plan scenarios. The observed account check on 10 November 2026 confirmed that the current Pro weekly allowance was fully used. We do not have daily history or measured allowance limits for the two Australian-dollar tiers, so the curves and plan lines below are illustrative scenarios, not measured forecasts.
+Local Codex session records from 4–9 November 2026 show the following model mix. The mix is counted by recorded model steps, not by subscription allowance consumed.
+
+```mermaid
+pie showData
+    title "Recorded model steps, 4–9 November 2026"
+    "GPT-6 Astra" : 4676
+    "GPT-6.1 Sol" : 278
+    "GPT-6 Luna" : 46
+```
+
+That is approximately 93.5% Astra, 5.6% Sol and 0.9% Luna across 5,000 recorded steps. A step is not necessarily one user message, and session records do not cover activity on every device or account surface.
+
+The account usage check on 10 November 2026 reported the current Pro weekly allowance at 100%. The available record gives that endpoint but not daily allowance readings, so a time-series line would invent intermediate values. The chart below shows the verified weekly endpoint alongside the explicitly unmeasured router comparison.
 
 ```mermaid
 xychart-beta
-    title "Illustrative weekly usage against plan thresholds"
-    x-axis [Mon, Tue, Wed, Thu, Fri, Sat, Sun]
-    y-axis "Share of A$300 scenario allowance (%)" 0 --> 100
-    line [8, 23, 39, 56, 75, 91, 100]
-    line [4, 12, 21, 31, 42, 53, 62]
-    line [50, 50, 50, 50, 50, 50, 50]
-    line [100, 100, 100, 100, 100, 100, 100]
+    title "Weekly allowance use: evidence available"
+    x-axis [Current Pro, Smart routing]
+    y-axis "Weekly allowance used (%)" 0 --> 100
+    bar [100, 0]
 ```
 
-The series order is baseline without routing, smart model routing, A$150 threshold and A$300 threshold. The plan lines assume allowance scales directly with monthly price, so A$150 is drawn at half the A$300 allowance. That proportional relationship is only a plotting assumption; OpenAI does not publish these Australian-dollar tiers' Codex allowance percentages. The routed curve is also a scenario, not measured savings. Do not use this graphic alone to decide whether to downgrade.
+The first bar is the verified Pro reading. The zero-height second bar is a placeholder for missing measurement, not zero consumption: smart-routing usage has not yet been measured. The account interface does not expose allowance percentages for the A$150 and A$300 tiers, and plan price alone cannot establish their limits. OpenAI says usage varies with model, task size, context, tools and caching. [Pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
 
-For a grounded forecast, record weekly usage percentages and the account's plan tier over several comparable weeks, first without routing and then with routing. Replace the illustrative curves and price-proportional thresholds with those observed values. OpenAI notes that model, task size, context, tools and caching affect usage. [Pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
+For a fair downgrade comparison, record the allowance percentage at consistent times over comparable weeks, alongside the plan tier, model mix, completed work and any extra credits. Then compare actual weekly curves for the Astra-heavy baseline and smart routing. Add A$150 or A$300 threshold lines only when the account shows those tiers' actual limits.
 
 ## How switching works
 
