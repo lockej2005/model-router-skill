@@ -50,9 +50,9 @@
 <circle cx="584.2857142857142" cy="358.0" r="4" fill="#2878d0"/>
 <circle cx="702.8571428571429" cy="322.0" r="4" fill="#d04437"/>
 <circle cx="821.4285714285714" cy="278.8" r="4" fill="#d04437"/>
-<line x1="135" y1="475" x2="161" y2="475" stroke="#d04437" stroke-width="5"/><text x="169" y="480" class="small">Astra segment</text>
-<line x1="340" y1="475" x2="366" y2="475" stroke="#2878d0" stroke-width="5"/><text x="374" y="480" class="small">Sol segment</text>
-<line x1="545" y1="475" x2="571" y2="475" stroke="#22a06b" stroke-width="5"/><text x="579" y="480" class="small">Luna segment</text>
+<line x1="135" y1="475" x2="161" y2="475" stroke="#d04437" stroke-width="5"/><text x="169" y="480" class="small">Astra · 5× Sol · 100× Luna</text>
+<line x1="340" y1="475" x2="366" y2="475" stroke="#2878d0" stroke-width="5"/><text x="374" y="480" class="small">Sol · baseline</text>
+<line x1="545" y1="475" x2="571" y2="475" stroke="#22a06b" stroke-width="5"/><text x="579" y="480" class="small">Luna · baseline</text>
 <line x1="750" y1="475" x2="776" y2="475" stroke="#6554c0" stroke-width="5"/><text x="784" y="480" class="small">Allowance guide (assumed)</text>
 <rect x="590" y="82" width="325" height="104" rx="8" fill="#f4f5f7" stroke="#c1c7d0"/>
 <text x="610" y="108" class="label" font-weight="700">Standard credit-rate comparison</text>
