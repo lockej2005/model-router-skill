@@ -49,24 +49,15 @@ These are starting defaults to evaluate, not measured savings guarantees or fixe
 
 ## Model-weighted allowance scenario
 
-This chart models how quickly the same stream of work could consume a normalized allowance under different model mixes. It is a scenario, not a measurement of your subscription. The model weights use the published standard credit rate ratios as a proxy: for uncached input and output, Sol is about 20% of Astra's rate and Luna about 1%. Actual subscription allowance accounting is not published as a direct conversion from these rates.
+The chart layers two cumulative weekly usage curves. Each segment is colored for the model assumed to handle that part of the work. Steeper segments represent a higher assumed allowance burn: Astra, then Sol, then Luna. The horizontal guides show A$150 and A$300 scenarios.
 
-```mermaid
-xychart-beta
-    title "Illustrative cumulative usage against plan thresholds"
-    x-axis "Same work completed (normalized units)" [0, 1, 2, 3, 4, 5, 6, 7]
-    y-axis "Share of A$300 reference allowance (%)" 0 --> 100
-    line [0, 14, 28, 42, 56, 70, 84, 98]
-    line [0, 3, 6, 9, 12, 15, 18, 21]
-    line [50, 50, 50, 50, 50, 50, 50, 50]
-    line [100, 100, 100, 100, 100, 100, 100, 100]
-```
+![Illustrative model-weighted weekly allowance chart](assets/model-weighted-usage.svg)
 
-The first curve represents an Astra-only baseline. The second represents a hypothetical routed mix of 10% Astra, 70% Sol and 20% Luna, weighted using those approximate rate ratios. The horizontal guides show an assumed A$150 threshold at half the A$300 allowance and an A$300 threshold at 100%. This proportional price-to-allowance assumption is unverified; the account endpoint confirms only that the current Pro weekly allowance reached 100% on 10 November 2026. It does not expose the Australian tiers' limits or daily usage history.
+This is a scenario, not a measured forecast. The curve assumes an Astra-heavy baseline and a routed mix that moves from Luna to Sol to Astra as task difficulty rises. The slope ratios use published standard credit rates as a rough proxy: for uncached input and output, Sol is about 20% of Astra's rate and Luna about 1%. Subscription allowance use is not published as a direct conversion from those rates.
 
-The point of the model weighting is to show direction: on the same token-sized work, routing more tasks to lower-rate models could reduce credit-equivalent consumption. It does not predict when your real plan will run out, because tasks differ in context and output, and subscription allowance use is not simply token rates multiplied by volume. OpenAI lists approximate local message ranges for Plus, but says those vary by task and that Pro currently has no five-hour limit. [Pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Standard model credit rates](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
+The A$150 guide is placed at half the A$300 guide only to illustrate a price-proportional threshold. OpenAI does not publish the Codex allowance limits for those Australian-dollar tiers. The account usage check on 10 November 2026 confirms the current Pro weekly allowance reached 100%, but there is no daily allowance history to ground the curve. Do not use this scenario alone to decide on a downgrade.
 
-Your local session records from 4–9 November show 4,676 Astra steps (93.5%), 278 Sol steps (5.6%) and 46 Luna steps (0.9%), out of 5,000 recorded steps. These are not user messages or allowance units, and do not cover every device or account surface. Replace the scenario curves and plan guides with measured dashboard readings from comparable weeks before using them to decide on a downgrade.
+Local session records from 4–9 November show 4,676 Astra steps (93.5%), 278 Sol steps (5.6%) and 46 Luna steps (0.9%), out of 5,000 recorded steps. These are model steps, not user messages or allowance units, and do not cover every device or account surface. Replace the scenario with dashboard readings collected at consistent times across comparable weeks. OpenAI says usage varies with model, task size, context, tools and caching. [Pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Standard model credit rates](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
 
 ## How switching works
 
