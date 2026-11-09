@@ -49,13 +49,13 @@ These are starting defaults to evaluate, not measured savings guarantees or fixe
 
 ## Estimated model-rate comparison
 
-The line chart uses message counts on the horizontal axis and Astra-equivalent message units on the vertical axis. The dashed reference line is a scale aid, not a plan limit. Each exchange assumes 40 input tokens and 180 output tokens.
+The line chart uses message counts on the horizontal axis and estimated standard credits consumed on the vertical axis. Each exchange assumes 40 input tokens and 180 output tokens.
 
 ![Layered model-rate line chart by message count](assets/model-weighted-usage.svg)
 
 Using OpenAI’s published standard rates, an exchange with 40 uncached input tokens and 180 output tokens costs 0.235 credits on Astra, 0.047 on Sol and 0.00235 on Luna. The line shows one model sequence across 500 messages: 100 Luna, 300 Sol, 75 Astra and 25 Luna. Each segment appears once; its slope follows the model’s relative rate. The rates and token arithmetic are grounded in the published rate card, while the 40/180 token size and model sequence are explicit assumptions.
 
-OpenAI states that credit prices do not determine included subscription usage and directs users to the account usage dashboard for current limits. The chart therefore does not show A$150 or A$300 plan thresholds or predict when a subscription will run out. Prior conversation context, tool results, reasoning, images and retries also increase real usage. [Published standard credit rates](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage-limit guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
+The chart labels the A$300/month plan benchmark, but does not draw a usage threshold: OpenAI does not publish the Codex allowance for that tier or a conversion from included subscription usage to standard credits. Credit rates show the relative model cost under the stated token assumption, not how many messages exhaust your plan. Prior conversation context, tool results, reasoning, images and retries also increase real usage. [Published standard credit rates](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage-limit guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
 
 When the usage dashboard shows 10% or less remaining, the skill now routes work to Luna at low reasoning unless you explicitly choose another model. This economy rule is a best-effort instruction: it only applies when the runtime exposes a reliable remaining-usage signal and a supported way to select the model. [Standard model credit rates and usage guidance](https://learn.chatgpt.com/docs/pricing#token-rates) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
 
