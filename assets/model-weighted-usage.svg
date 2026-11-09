@@ -42,7 +42,9 @@
 <text x="675" y="150" class="small" fill="#d04437">Astra</text>
 <line x1="711.5" y1="95.3" x2="780.0" y2="94.33333333333333" stroke="#22a06b" stroke-width="6" stroke-linecap="round"/>
 <text x="748" y="115" class="small" fill="#22a06b">Luna</text>
-<text x="515" y="145.66666666666666" class="small" fill="#2878d0">Routed: 500 messages, 111.5 Astra-equivalents</text>
+<line x1="765" y1="78" x2="778" y2="91" stroke="#2878d0" stroke-width="1.5"/>
+<circle cx="780" cy="94.33333333333333" r="4" fill="#2878d0"/>
+<text x="520" y="70" class="small" fill="#2878d0">500 messages · 111.5% of A$300 proxy</text>
 <line x1="105" y1="510" x2="129" y2="510" stroke="#d04437" stroke-width="5"/>
 <text x="137" y="370" class="small">Astra-only</text>
 <line x1="255" y1="510" x2="279" y2="510" stroke="#2878d0" stroke-width="5"/>
