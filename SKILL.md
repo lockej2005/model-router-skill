@@ -11,6 +11,8 @@ Complete the user's task with the least total usage that reliably achieves the r
 
 Inspect the models and reasoning levels actually exposed by the current runtime. The names below are starting preferences, not a guarantee of account entitlement. If a preferred model is unavailable, use an available suitable model and disclose a material substitution. Do not query account limits or fetch model documentation for every ordinary task. Verify current pricing and availability when making plan or savings recommendations.
 
+Use GPT-6.1 Sol at low reasoning as the default route when a task spans multiple categories or does not clearly fit a specialist route. It is a practical balance for mixed work. Lower the route for bounded subtasks and raise it for consequential or difficult parts; do not force one model across every stage of a workflow.
+
 Use GPT-6 Luna at low reasoning for bounded searches, extraction, classification, short summaries, simple file operations and service-status checks with clear completion criteria. A search still needs adequate coverage and evidence; cheaper routing does not justify guessing.
 
 Use GPT-6.1 Terra at low reasoning as a trial route for routine browser operation, visual inspection and writing. Escalate when visual ambiguity, complex state or repeated action failures makes this route unreliable. Treat its suitability as something to validate through results.
@@ -53,3 +55,23 @@ Keep tool responses bounded and retrieve only useful detail. Batch independent r
 Do not promise a percentage saving or recommend a downgrade from task counts alone. Distinguish input, cached input and output tokens, recorded activity and billed usage, and API prices and subscription allowances. Account-wide usage changes may include concurrent chats and other devices.
 
 When the user requests an efficiency trial or assessment, use available usage records to compare a representative period, including success rates, retries, latency, paid credits and peak usage windows. Avoid extra evaluation runs merely to produce metrics. Do not change a subscription, purchase credits, consume a reset or schedule monitoring as part of routing alone.
+
+## Category defaults
+
+Start mixed or uncategorised work with GPT-6.1 Sol at low reasoning. Split a task by stage when its research, creation and review needs differ. Use the least costly exposed route that meets each stage's quality requirements.
+
+| Category | Default route | Escalate when |
+|---|---|---|
+| Instagram Reels and short-form video | GPT-6.1 Sol · low for concept and script; use the relevant media tools for production | Factual claims need verification, the story is nuanced, or edit review reveals problems |
+| Software development | GPT-6.1 Sol · low for bounded fixes; medium for multi-file changes | A failure persists after a focused correction or design tradeoffs are substantial |
+| Research and current information | GPT-6.1 Luna · low for focused lookup; GPT-6.1 Sol · medium for synthesis | Sources conflict, evidence is ambiguous, or the conclusion is consequential |
+| Writing and communications | GPT-6.1 Luna · low for short drafts; GPT-6.1 Sol · low for longer pieces | The subject is sensitive, complex, or requires careful argument |
+| Images and design | GPT-6.1 Terra · low for visual review; use the relevant image tools for generation or editing | Visual requirements are ambiguous or repeated review finds mismatches |
+| Audio and voice | GPT-6.1 Luna · low for transcription or brief text work; use the relevant audio tools for production | Speaker attribution, timing or meaning is unclear, or fidelity needs close review |
+| Spreadsheets and data | GPT-6.1 Luna · low for extraction and routine calculations; GPT-6.1 Sol · medium for reconciliation | Data is inconsistent, formulas affect decisions, or errors could have material consequences |
+| Documents and presentations | GPT-6.1 Sol · low for drafting and routine edits; use format-specific tools | Legal, financial or assessed content needs substantive review, or layout checks fail |
+| Browser and app operations | GPT-6.1 Terra · low for routine visual workflows; GPT-6.1 Luna · low for a simple status check | The interface is ambiguous or state changes repeatedly fail; stop for access blockers |
+| Monitoring and automation | GPT-6.1 Luna · low for bounded checks; prefer deterministic scripts for repetition | An exception needs diagnosis, or the automation could cause consequential changes |
+
+Treat these model names as preferences. Check runtime availability and preserve source checking, specialist tools and user authorization regardless of route. These are initial defaults to evaluate against task quality and actual usage, not measured guarantees.
+

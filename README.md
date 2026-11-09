@@ -28,16 +28,24 @@ Model choice is only one part of efficient work. Context transfer, tool calls, r
 - Keeps delegation focused, limits retry loops and verifies the result.
 - Gives a concise explanation when a supported model switch is made or requested.
 
-## Routing
+## Default and category routes
 
-| Work | Starting route | Typical examples |
+GPT-6.1 Sol at low reasoning is the default for mixed or uncategorised work. The router changes the route when a task has a clear specialist shape, and can use different routes for separate stages of one job.
+
+| Category | Default route | Escalate when |
 |---|---|---|
-| Bounded, clearly checkable tasks | GPT-6 Luna · low | Search, extract, classify, short summary, simple status check |
-| Routine visual or browser work | GPT-6.1 Terra · low | Inspect a page, complete a well-defined browser workflow |
-| Implementation and substantive analysis | GPT-6.1 Sol · low or medium | Code changes, multi-file work, evidence synthesis, debugging |
-| Difficult reasoning or unresolved diagnosis | GPT-6 Astra · medium, then high if needed | Hard failures, architecture tradeoffs, consequential uncertainty |
+| Instagram Reels and short-form video | GPT-6.1 Sol · low for concept and script; media tools for production | Claims need careful checking or edit review finds issues |
+| Software development | GPT-6.1 Sol · low for bounded fixes; medium for multi-file work | A focused fix fails or design tradeoffs are substantial |
+| Research and current information | GPT-6.1 Luna · low for lookup; GPT-6.1 Sol · medium for synthesis | Sources conflict or conclusions carry meaningful consequences |
+| Writing and communications | GPT-6.1 Luna · low for short drafts; GPT-6.1 Sol · low for longer work | The subject is sensitive or argument is complex |
+| Images and design | GPT-6.1 Terra · low for visual review; image tools for creation and editing | Visual requirements are ambiguous or review finds mismatches |
+| Audio and voice | GPT-6.1 Luna · low for transcription; audio tools for production | Attribution, timing or meaning is unclear |
+| Spreadsheets and data | GPT-6.1 Luna · low for extraction; GPT-6.1 Sol · medium for reconciliation | Inputs conflict or calculations affect consequential decisions |
+| Documents and presentations | GPT-6.1 Sol · low for routine drafting; format-specific tools | Substantive review is needed or layout checks fail |
+| Browser and app operations | GPT-6.1 Terra · low for visual workflows; GPT-6.1 Luna · low for simple status checks | UI state is ambiguous; stop for access blockers |
+| Monitoring and automation | GPT-6.1 Luna · low for bounded checks; scripts for repetition | An exception needs diagnosis or an action has significant impact |
 
-These are starting points, not hard-coded account entitlements. The skill checks the models exposed by the runtime and uses an available suitable option. Task difficulty, context size, tools and verification needs can outweigh a model's nominal price.
+These are starting defaults to evaluate, not measured savings guarantees or fixed account entitlements. Use the models available in the runtime, and keep tool choice, source quality and verification appropriate to the task.
 
 ## How switching works
 
