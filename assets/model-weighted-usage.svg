@@ -1,49 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660">
 <rect width="100%" height="100%" fill="#fff"/>
 <style>text{font-family:Arial,sans-serif;fill:#172b4d}.small{font-size:14px}.title{font-size:22px;font-weight:700}</style>
-<text x="130" y="34" class="title">Estimated weekly allowance use by message count</text>
-<text x="130" y="60" class="small">Assumption per exchange: 40 input tokens + 180 output tokens; normalized budget = 100 Astra exchanges</text>
-<line x1="130" y1="430.0" x2="930" y2="430.0" stroke="#dfe1e6"/>
-<text x="80" y="435.0" class="small">0%</text>
-<line x1="130" y1="347.5" x2="930" y2="347.5" stroke="#dfe1e6"/>
-<text x="80" y="352.5" class="small">25%</text>
-<line x1="130" y1="265.0" x2="930" y2="265.0" stroke="#dfe1e6"/>
-<text x="80" y="270.0" class="small">50%</text>
-<line x1="130" y1="182.5" x2="930" y2="182.5" stroke="#dfe1e6"/>
-<text x="80" y="187.5" class="small">75%</text>
-<line x1="130" y1="100.0" x2="930" y2="100.0" stroke="#dfe1e6"/>
-<text x="80" y="105.0" class="small">100%</text>
-<line x1="130" y1="100" x2="130" y2="430" stroke="#44546f"/>
-<line x1="130" y1="430" x2="930" y2="430" stroke="#44546f"/>
-<line x1="130" y1="265.0" x2="930" y2="265.0" stroke="#6554c0" stroke-width="2" stroke-dasharray="8 6"/>
-<text x="815" y="257.0" class="small" fill="#6554c0">A$150 guide*</text>
-<line x1="130" y1="100.0" x2="930" y2="100.0" stroke="#6554c0" stroke-width="2" stroke-dasharray="8 6"/>
-<text x="815" y="92.0" class="small" fill="#6554c0">A$300 guide*</text>
-<text x="120.0" y="454" class="small">0</text>
-<text x="200.0" y="454" class="small">50</text>
-<text x="280.0" y="454" class="small">100</text>
-<text x="360.0" y="454" class="small">150</text>
-<text x="440.0" y="454" class="small">200</text>
-<text x="520.0" y="454" class="small">250</text>
-<text x="600.0" y="454" class="small">300</text>
-<text x="680.0" y="454" class="small">350</text>
-<text x="760.0" y="454" class="small">400</text>
-<text x="840.0" y="454" class="small">450</text>
-<text x="920.0" y="454" class="small">500</text>
-<text x="480" y="482" class="small">Messages / exchanges</text>
-<line x1="130.0" y1="430.0" x2="210.0" y2="265.0" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
-<line x1="210.0" y1="265.0" x2="290.0" y2="100.0" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
-<circle cx="290.0" cy="100.0" r="6" fill="#d04437"/>
-<text x="302.0" y="124.0" class="small" fill="#d04437">Astra-only: 100 msgs</text>
-<line x1="130.0" y1="430.0" x2="290.0" y2="350.14" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
-<line x1="290.0" y1="350.14" x2="450.0" y2="270.28" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
-<line x1="450.0" y1="270.28" x2="610.0" y2="190.42000000000002" stroke="#2878d0" stroke-width="5" stroke-linecap="round"/>
-<line x1="610.0" y1="190.42000000000002" x2="790.8" y2="100.0" stroke="#2878d0" stroke-width="5" stroke-linecap="round"/>
-<circle cx="790.8" cy="100.0" r="6" fill="#d04437"/>
-<text x="650.8" y="125.0" class="small">Routed mix: ≈413 msgs</text>
-<rect x="130" y="515" width="820" height="88" rx="8" fill="#f4f5f7" stroke="#c1c7d0"/>
-<text x="150" y="542" class="small">Per assumed exchange: Astra 0.235 credits · Sol 0.047 credits · Luna 0.00235 credits.</text>
-<text x="150" y="566" class="small">Astra is 5× Sol and 100× Luna at these published standard credit rates.</text>
-<text x="150" y="590" class="small">*A$150 is assumed to have half the A$300 allowance. Both plan limits are unverified.</text>
-<text x="130" y="630" class="small">Estimate only: subscription allowance is not a direct conversion from credit rates; real context and tools increase usage.</text>
+<text x="120" y="34" class="title">Estimated message count against plan benchmarks</text>
+<text x="120" y="60" class="small">Per exchange: 40 input tokens + 180 output tokens; credits are used as a relative burn proxy</text>
+<line x1="120" y1="430.0" x2="930" y2="430.0" stroke="#dfe1e6"/>
+<text x="70" y="435.0" class="small">0</text>
+<line x1="120" y1="355.0" x2="930" y2="355.0" stroke="#dfe1e6"/>
+<text x="70" y="360.0" class="small">6</text>
+<line x1="120" y1="280.0" x2="930" y2="280.0" stroke="#dfe1e6"/>
+<text x="70" y="285.0" class="small">12</text>
+<line x1="120" y1="205.0" x2="930" y2="205.0" stroke="#dfe1e6"/>
+<text x="70" y="210.0" class="small">18</text>
+<line x1="120" y1="130.0" x2="930" y2="130.0" stroke="#dfe1e6"/>
+<text x="70" y="135.0" class="small">24</text>
+<line x1="120" y1="100" x2="120" y2="430" stroke="#44546f"/>
+<line x1="120" y1="430" x2="930" y2="430" stroke="#44546f"/>
+<text x="30" y="85" class="small">Credit-equivalent burn</text>
+<text x="450" y="475" class="small">Messages / exchanges</text>
+<text x="110.0" y="453" class="small">0</text>
+<text x="191.0" y="453" class="small">50</text>
+<text x="272.0" y="453" class="small">100</text>
+<text x="353.0" y="453" class="small">150</text>
+<text x="434.0" y="453" class="small">200</text>
+<text x="515.0" y="453" class="small">250</text>
+<text x="596.0" y="453" class="small">300</text>
+<text x="677.0" y="453" class="small">350</text>
+<text x="758.0" y="453" class="small">400</text>
+<text x="839.0" y="453" class="small">450</text>
+<text x="920.0" y="453" class="small">500</text>
+<line x1="120" y1="136.25" x2="930" y2="136.25" stroke="#6554c0" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="785" y="129.25" class="small" fill="#6554c0">A$300 benchmark*</text>
+<line x1="120" y1="283.125" x2="930" y2="283.125" stroke="#6554c0" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="785" y="276.125" class="small" fill="#6554c0">A$150 benchmark*</text>
+<line x1="120.0" y1="430.0" x2="201.0" y2="283.125" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
+<line x1="201.0" y1="283.125" x2="282.0" y2="136.25" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
+<circle cx="282.0" cy="283.125" r="6" fill="#d04437"/><text x="292.0" y="156.25" class="small">Astra: 100 msgs</text>
+<line x1="120.0" y1="430.0" x2="152.4" y2="429.4125" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
+<line x1="152.4" y1="429.4125" x2="249.6" y2="394.16249999999997" stroke="#2878d0" stroke-width="5" stroke-linecap="round"/>
+<line x1="249.6" y1="394.16249999999997" x2="273.9" y2="350.0999999999999" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
+<line x1="273.9" y1="350.0999999999999" x2="282.0" y2="349.95312499999994" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
+<line x1="282.0" y1="349.95312499999994" x2="314.4" y2="349.365625" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
+<line x1="314.4" y1="349.365625" x2="411.59999999999997" y2="314.1156249999999" stroke="#2878d0" stroke-width="5" stroke-linecap="round"/>
+<line x1="411.59999999999997" y1="314.1156249999999" x2="435.90000000000003" y2="270.053125" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
+<line x1="435.90000000000003" y1="270.053125" x2="444.0" y2="269.90625" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
+<line x1="444.0" y1="269.90625" x2="476.4" y2="269.31875" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
+<line x1="476.4" y1="269.31875" x2="573.6" y2="234.0687499999996" stroke="#2878d0" stroke-width="5" stroke-linecap="round"/>
+<line x1="573.6" y1="234.0687499999996" x2="597.9" y2="190.00624999999968" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
+<line x1="597.9" y1="190.00624999999968" x2="606.0" y2="189.8593749999997" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
+<line x1="606.0" y1="189.8593749999997" x2="638.4" y2="189.27187499999974" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
+<line x1="638.4" y1="189.27187499999974" x2="735.6" y2="154.02187499999928" stroke="#2878d0" stroke-width="5" stroke-linecap="round"/>
+<line x1="735.6" y1="154.02187499999928" x2="759.9" y2="109.9593749999994" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
+<line x1="759.9" y1="109.9593749999994" x2="768.0" y2="109.81249999999937" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
+<line x1="768.0" y1="109.81249999999937" x2="800.4" y2="109.22499999999945" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
+<line x1="800.4" y1="109.22499999999945" x2="897.6" y2="73.974999999999" stroke="#2878d0" stroke-width="5" stroke-linecap="round"/>
+<line x1="897.6" y1="73.974999999999" x2="921.9" y2="29.912499999999056" stroke="#d04437" stroke-width="5" stroke-linecap="round"/>
+<line x1="921.9" y1="29.912499999999056" x2="930.0" y2="29.765624999999034" stroke="#22a06b" stroke-width="5" stroke-linecap="round"/>
+<line x1="130" y1="510" x2="155" y2="510" stroke="#22a06b" stroke-width="5"/><text x="163" y="515" class="small">Luna: slowest burn</text>
+<line x1="330" y1="510" x2="355" y2="510" stroke="#2878d0" stroke-width="5"/><text x="363" y="515" class="small">Sol: moderate burn</text>
+<line x1="555" y1="510" x2="580" y2="510" stroke="#d04437" stroke-width="5"/><text x="588" y="515" class="small">Astra: fastest burn</text>
+<line x1="800" y1="510" x2="825" y2="510" stroke="#6554c0" stroke-width="5"/><text x="833" y="515" class="small">Plan benchmark*</text>
+<text x="120" y="555" class="small">Exchange rates: Astra 0.235, Sol 0.047, Luna 0.00235 standard credits (40 input + 180 output tokens).</text>
+<text x="120" y="580" class="small">*Benchmarks normalize A$300 to 100 Astra exchanges and assume A$150 has half its allowance; actual limits are unpublished.</text>
+<text x="120" y="605" class="small">Routed profile repeats 20 Luna, 60 Sol, 15 Astra, 5 Luna messages; real routing and subscription usage will vary.</text>
 </svg>
