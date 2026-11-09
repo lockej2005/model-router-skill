@@ -49,9 +49,9 @@ These are starting defaults to evaluate, not measured savings guarantees or fixe
 
 ## Estimated model-rate comparison
 
-The line chart uses message counts on the horizontal axis and Astra-equivalent message units on the vertical axis. One unit is the rate-weighted cost of an exchange handled by Astra. Each exchange assumes 40 input tokens and 180 output tokens.
+The line chart uses message counts on the horizontal axis and Astra-equivalent message units on the vertical axis. The dashed reference line is a scale aid, not a plan limit. Each exchange assumes 40 input tokens and 180 output tokens.
 
-![Layered model-weighted message and plan benchmark chart](assets/model-weighted-usage.svg)
+![Layered model-rate line chart by message count](assets/model-weighted-usage.svg)
 
 Using OpenAI’s published standard rates, an exchange with 40 uncached input tokens and 180 output tokens costs 0.235 credits on Astra, 0.047 on Sol and 0.00235 on Luna. The line shows one model sequence across 500 messages: 100 Luna, 300 Sol, 75 Astra and 25 Luna. Each segment appears once; its slope follows the model’s relative rate. The rates and token arithmetic are grounded in the published rate card, while the 40/180 token size and model sequence are explicit assumptions.
 
