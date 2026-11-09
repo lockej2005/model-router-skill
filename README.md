@@ -47,33 +47,27 @@ GPT-6.1 Sol at low reasoning is the default for mixed or uncategorised work. The
 
 These are starting defaults to evaluate, not measured savings guarantees or fixed account entitlements. Use the models available in the runtime, and keep tool choice, source quality and verification appropriate to the task.
 
-## Observed model mix and weekly usage
+## Layered weekly usage chart
 
-Local Codex session records from 4–9 November 2026 show the following model mix. The mix is counted by recorded model steps, not by subscription allowance consumed.
-
-```mermaid
-pie showData
-    title "Recorded model steps, 4–9 November 2026"
-    "GPT-6 Astra" : 4676
-    "GPT-6.1 Sol" : 278
-    "GPT-6 Luna" : 46
-```
-
-That is approximately 93.5% Astra, 5.6% Sol and 0.9% Luna across 5,000 recorded steps. A step is not necessarily one user message, and session records do not cover activity on every device or account surface.
-
-The account usage check on 10 November 2026 reported the current Pro weekly allowance at 100%. The available record gives that endpoint but not daily allowance readings, so a time-series line would invent intermediate values. The chart below shows the verified weekly endpoint alongside the explicitly unmeasured router comparison.
+The chart below uses one shared scale for cumulative weekly allowance use. The solid blue line is the only measured value: Pro reached 100% on 10 November 2026. The dashed lines show the comparisons we want to measure, but their height is deliberately left unplotted because we do not have daily allowance readings for an Astra-only week, a smart-routing week, or the A$150 and A$300 tiers.
 
 ```mermaid
 xychart-beta
-    title "Weekly allowance use: evidence available"
-    x-axis [Current Pro, Smart routing]
-    y-axis "Weekly allowance used (%)" 0 --> 100
-    bar [100, 0]
+    title "Weekly allowance use: measured point and comparison layers"
+    x-axis [Mon, Tue, Wed, Thu, Fri, Sat, Sun]
+    y-axis "Share of that plan's weekly allowance (%)" 0 --> 100
+    line [0, 0, 0, 0, 0, 0, 100]
+    line [0, 0, 0, 0, 0, 0, 0]
+    line [0, 0, 0, 0, 0, 0, 0]
+    line [0, 0, 0, 0, 0, 0, 0]
+    line [0, 0, 0, 0, 0, 0, 0]
 ```
 
-The first bar is the verified Pro reading. The zero-height second bar is a placeholder for missing measurement, not zero consumption: smart-routing usage has not yet been measured. The account interface does not expose allowance percentages for the A$150 and A$300 tiers, and plan price alone cannot establish their limits. OpenAI says usage varies with model, task size, context, tools and caching. [Pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
+Series order: measured Pro endpoint; Astra-only baseline, not measured; smart-routing week, not measured; A$150 plan limit, unavailable; A$300 plan limit, unavailable. Mermaid requires numeric points, so zeroes stand in for unavailable observations. They do not mean zero use or zero allowance. Read only the labelled measured point; the flat placeholders are not data. This keeps all five layers visible in one chart, but a richer chart with true gaps would be easier to read than Mermaid's line format.
 
-For a fair downgrade comparison, record the allowance percentage at consistent times over comparable weeks, alongside the plan tier, model mix, completed work and any extra credits. Then compare actual weekly curves for the Astra-heavy baseline and smart routing. Add A$150 or A$300 threshold lines only when the account shows those tiers' actual limits.
+The model mix is a separate layer of evidence from the same local session sample, 4–9 November 2026: 4,676 recorded Astra steps (93.5%), 278 Sol steps (5.6%) and 46 Luna steps (0.9%), out of 5,000. These are model steps, not user messages or allowance percentages. The records do not represent every device or account surface.
+
+For a grounded comparison, record the usage dashboard percentage at the same time each day across comparable Astra-only and smart-routing weeks. Capture each plan's own displayed limit as well. Then replace the placeholder series with measured values and plot each plan against its actual 100% threshold. OpenAI says usage varies with model, task size, context, tools and caching. [Pricing and usage guidance](https://learn.chatgpt.com/docs/pricing#what-are-the-usage-limits-for-my-plan) · [Usage dashboard](https://chatgpt.com/codex/settings/usage).
 
 ## How switching works
 
